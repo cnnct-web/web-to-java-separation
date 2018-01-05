@@ -1,0 +1,101 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #333333;
+}
+fieldset,img{
+    border:none;
+}
+img{
+	vertical-align: middle;
+}
+ul,ol,li{
+    list-style: none;
+}
+input{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Microsoft YaHei";
+    border:none;
+}
+select,input{
+    vertical-align: middle;
+}
+select,input,textarea{
+    font-size: 13px;
+    margin:0;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+	border:1px solid #dadada;
+	line-height: 30px;
+}
+textarea{
+    resize: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: #333333;
+}
+a:hover{
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+}
+.container{
+    width: 1000px;
+    margin:0 auto;
+}
+.left, .fl{
+    float: left;
+}
+.right, .fr{
+    float: right;
+}
+
+
+
+/*********************************************/
+.main-form{
+    width: 400px;
+    margin: 20px auto;
+
+}
+.main-form p{
+    margin-top: 20px;
+}
+.main-form p input{
+    width:200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-indent: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+}
+.main-form p button{
+    width: 60px;
+    text-align: center;
+    height: 30px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 2px;
+    outline: none;
+    background: gray;
+    border:none;
+    cursor: pointer;
+}
+.main-form p input:focus {
+    box-shadow: inset 0 2px 1px rgba(0,55,255,.075);
+    border:1px solid #0019ff;
+}
