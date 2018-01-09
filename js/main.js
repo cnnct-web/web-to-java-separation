@@ -6,6 +6,7 @@
 var istank = false,
 	ajaxcall = new Array();
 function ajax(caller,trcode,callback,ajaxcallac){
+	typeOf(caller) == "object" ? JSON.stringify(caller) : caller
 	var url = "http://221.12.41.21:8085";
 	if(!ajaxcallac){
 		ajaxcallac=trcode
@@ -16,7 +17,7 @@ function ajax(caller,trcode,callback,ajaxcallac){
 	var tempajax = $.ajax({
 		type: "POST",
 		url: url+"/nb_opm/interf/frontEnd/"+trcode,
-		data: JSON.stringify(caller),
+		data: caller,
 		dataType: "json",
 		contentType:'text/plain',
 		success: function(data){
